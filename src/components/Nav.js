@@ -7,7 +7,7 @@ class Nav extends React.Component {
         <nav class="nav has shadow">
             <div class="nav-left">
                 <a class="nav-item">
-                <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo" />
+                <img src="/Users/sophiakhan/Documents/TheIronYard/w7-react-router-redux/d4-create-a-notes-app/public/img/compose.png" alt="Compose Logo" />
                 </a>
             </div>
             </nav>
