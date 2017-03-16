@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+#notesBox {
+    border: red 1px solid;
+    padding: 50px;
+}
