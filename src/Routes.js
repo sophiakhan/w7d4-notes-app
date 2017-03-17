@@ -14,6 +14,7 @@ const history = syncHistoryWithStore(browserHistory, store)
 
 // Load page view components
 import Notes from './components/Notes'
+import NewNote from './components/NewNote'
 
 
 // Configure routes
@@ -22,6 +23,7 @@ class Routes extends React.Component {
         return <Provider store={store}> 
                 <Router history={history}>
                 <Route path="/" component={Notes} />
+                <Route path="/newnote" component={NewNote} />
             </Router>
         </Provider>
     }

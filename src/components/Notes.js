@@ -1,9 +1,11 @@
 import React from 'react';
-import Nav from './Nav'
+import Nav from './Nav';
+import NewNote from './NewNote';
 
 class Notes extends React.Component {
     constructor(props) {
         super(props)
+        
     }
 
     render() {

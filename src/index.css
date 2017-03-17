@@ -9,3 +9,12 @@ img {
     border: red 1px solid;
     padding: 50px;
 }
+
+#headerCol {
+    margin-top: 20px;
+    border-bottom: solid 3px rgb(83, 173, 61);
+}
+
+#note-area {
+    margin: 20px 100px 20px 100px;
+}
