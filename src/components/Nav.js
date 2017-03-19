@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { browserHistory } from 'react-router'
 
 class Nav extends React.Component {
      static propTypes = {
@@ -14,12 +14,15 @@ class Nav extends React.Component {
         }
     }
 
+    // (should) set up button to add new note 
     onClick(addNote) {
-        addNote() // < add stuff in parens
+        addNote() // < add stuff in parens?
 
         this.setState({
             //add stuff
         })
+
+        browserHistory.push('/NewNote')
     }
 
     render() {
@@ -38,14 +41,14 @@ class Nav extends React.Component {
                     </li>
                 </ul>
         </div>
-        <div className="row">
+        {/*<div className="row">
                 <div className="navbar-form text-center" role="search">
                     <div className="form-group center-block">
                         <input type="text" className="form-control" placeholder="Search Notes" />
                     </div>
                     <button type="submit" className="btn btn-default">Search</button>
                 </div>
-            </div>
+            </div>*/}
         </div>  
         </div>
     }

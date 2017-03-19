@@ -5,9 +5,14 @@ img {
     width: 100%;
 }
 
-#notesBox {
+/*#notesBox {
     border: red 1px solid;
     padding: 50px;
+}*/
+
+#addNoteButton {
+    font-weight: bold;
+    color: rgb(83, 173, 61);
 }
 
 #headerCol {

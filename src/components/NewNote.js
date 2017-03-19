@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import store from 'store'
+import { connect } from 'react-redux'
 import { browserHistory } from 'react-router'
 
 class NewNote extends React.Component {
@@ -9,7 +10,7 @@ class NewNote extends React.Component {
         this.addNote = this.addNote.bind(this)
 
         this.state = {
-
+            // add stuff
         }
     }
 
