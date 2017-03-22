@@ -17,6 +17,13 @@ class NewNote extends React.Component {
         }
     }
 
+    componentWillMount() {
+        if (this.props.params.index >= 0) {
+            let note = this.props.redux.notes[this.props.params.index]
+            this.setState(note)
+        }
+    }
+
     addNote() {
         // Get notes from localStorage via store.js library
         let notes = store.get('notes')
@@ -78,4 +85,12 @@ class NewNote extends React.Component {
     }
 }
 
-export default NewNote
+// Map shared Redux state to props
+const mapStateToProps = (redux) => {
+    return {
+        redux: redux.state
+    }
+}
+
+// Export the component, connected to Redux, for other components to import
+export default connect(mapStateToProps)(NewNote)

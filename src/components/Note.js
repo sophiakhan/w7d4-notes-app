@@ -14,7 +14,7 @@ class Note extends React.Component {
     render() {
         console.log(this.props)
         return <div className="card">
-                    <img className="card-img-top" src="..." alt="Card image cap" />
+                    <img className="card-img-top" src="{this.props.link}" />
                     <div className="card-block">
                         <h4 className="card-title">{this.props.title}</h4>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
