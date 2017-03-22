@@ -2,9 +2,9 @@ import React from 'react'
 import { browserHistory } from 'react-router'
 
 class Nav extends React.Component {
-     static propTypes = {
-        addNote: React.PropTypes.func.isRequired
-    }
+    //  static propTypes = {
+    //     addNote: React.PropTypes.func.isRequired
+    // }
 
     constructor(props) {
         super(props)
@@ -14,15 +14,8 @@ class Nav extends React.Component {
         }
     }
 
-    // (should) set up button to add new note 
-    onClick(addNote) {
-        addNote() // < add stuff in parens?
-
-        this.setState({
-            //add stuff
-        })
-
-        browserHistory.push('/NewNote')
+    onClick() {
+        browserHistory.push('/newnote')
     }
 
     render() {

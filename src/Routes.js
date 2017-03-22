@@ -22,10 +22,10 @@ class Routes extends React.Component {
     render() {
         return <Provider store={store}> 
                 <Router history={history}>
-                <Route path="/" component={Notes} />
-                <Route path="/newnote" component={NewNote} />
-            </Router>
-        </Provider>
+                    <Route path="/" component={Notes} />
+                    <Route path="/newnote" component={NewNote} />
+                </Router>
+            </Provider>
     }
 }
 

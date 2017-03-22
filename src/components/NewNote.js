@@ -10,7 +10,10 @@ class NewNote extends React.Component {
         this.addNote = this.addNote.bind(this)
 
         this.state = {
-            // add stuff
+            title: null,
+            body: null,
+            link: null,
+            tags: null
         }
     }
 
@@ -32,8 +35,8 @@ class NewNote extends React.Component {
         // Redirect back to the home page
         browserHistory.push('/')
     }
-
     render() {
+
         return <div>
         <Nav />
         <div className="well well-sm text-center" id="note-area">
@@ -41,28 +44,28 @@ class NewNote extends React.Component {
                 <div className="form-group">
                         <label for="title" className="control-label">Title</label>
                         <div>
-                            <input type="title" className="form-control" id="title" placeholder="Title" />
+                            <input type="title" className="form-control" id="title" placeholder="Title" onChange={(e) => this.setState({title: e.target.value})} />
                         </div>
                 </div>
 
                 <div className="form-group">
                         <label for="body" className="control-label">Note</label>
                         <div>
-                            <textarea className="form-control" rows="10" placeholder="Compose note here..."></textarea>
+                            <textarea className="form-control" rows="10" placeholder="Compose note here..." onChange={(e) => this.setState({body: e.target.value})}></textarea>
                         </div>
                 </div>
 
                 <div className="form-group">
                         <label for="link" className="control-label">Link</label>
                         <div>
-                            <input type="link" className="form-control" id="link" placeholder="Image URL" />
+                            <input type="link" className="form-control" id="link" placeholder="Image URL" onChange={(e) => this.setState({link: e.target.value})} />
                         </div>
                 </div>
 
                 <div className="form-group">
                         <label for="tags" className="control-label">Tags (Seperate by comma)</label>
                         <div>
-                            <input type="tags" className="form-control" id="tags" placeholder="Tags" />
+                            <input type="tags" className="form-control" id="tags" placeholder="Tags" onChange={(e) => this.setState({tags: e.target.value})}/>
                         </div>
                 </div>
                 
